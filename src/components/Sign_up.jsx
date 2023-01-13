@@ -45,6 +45,18 @@ const Sign_up =()=>
         <div class="input-group mt-2 w-50 ">
         <input type="email" class="form-control" placeholder="someone@gmail.com"  aria-label="Username" name="email"></input>
         </div>
+        {/* Password*/}
+        <label className="mt-5">Password</label>
+        <br></br>
+        <div class="input-group mt-2 w-50 ">
+        <input type="password" class="form-control" placeholder="Enter Password" aria-label="Username" name="password"></input>
+        </div>
+        {/* Confirm Password*/}
+        <label className="mt-5">Confirm Password</label>
+        <br></br>
+        <div class="input-group mt-2 w-50 ">
+        <input type="password" class="form-control" placeholder="Confirm Password" aria-label="Username" name="confirm_password"></input>
+        </div>
         <button className="btn btn-custom mt-4 mb-4 btn-lg rounded-4" style={{backgroundColor:'#9EEA11',color:'white'}}>Sign up</button>
        </form>
         </>
