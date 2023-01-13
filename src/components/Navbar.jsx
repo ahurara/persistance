@@ -29,11 +29,6 @@ const Navbar =()=>
                     <a className="nav-link text-white" href="/#">Teachers</a>
                 </li>
                 <li className="nav-item">
-                   <NavLink to='aboutus' className='nav-link text-white'>
-                    About us
-                   </NavLink>
-                </li>
-                <li className="nav-item">
                     <a className="nav-link text-white" href="/#">Contact us</a>
                 </li>
             </ul>

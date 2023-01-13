@@ -6,7 +6,7 @@ import frontImg from '../Assets/navbar/ashkan-forouzani-7blIFp0kFP4-unsplash.jpg
 import AboutUs from "../components/AboutUsAtHomepage";
 import '../cardsdata';
 import Cards from "../components/Cards";
-import cardsData from "../cardsdata";
+import cardsData, { cardsDataAtHomepage } from "../cardsdata";
 
 const containerStyle={
     padding:"0px",
@@ -42,7 +42,14 @@ return(
         {/* course secion */}
         <div className="row g-0">
         <div className="col-12 m-5">
-       {cardsData.map((i)=>{
+        <div className="row">
+        <h1 className="fw-bolder" style={{color:'#8B2009'}}>Courses</h1>
+        <br/>
+        <br/><br/>
+        <br/>
+        <hr/>
+
+       {cardsDataAtHomepage.map((i)=>{
                 return <Cards
                 key={i.id}
                 img={i.img}
@@ -51,6 +58,7 @@ return(
                 />
             })
        }
+       </div>
         </div>
         </div>
         {/* first footer */}
