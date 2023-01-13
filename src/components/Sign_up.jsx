@@ -21,7 +21,7 @@ const Sign_up =()=>
          <label className="mt-5">Gender</label>
         <br></br>
         <div class="input-group mt-2 w-50 ">
-        <select name="Gender">
+        <select name="gender">
             <option value='male'>Male</option>
             <option value='female'>Female</option>
             <option value='other'>Other</option>
