@@ -31,13 +31,13 @@ const Sign_up =()=>
         <label className="mt-5">Whatsapp</label>
         <br></br>
         <div class="input-group mt-2 w-50 ">
-        <input type="tel" class="form-control" placeholder="0000-0000000" pattern="[0-9]{4}-[0-9]{7}" aria-label="Username" name="wNum"></input>
+        <input type="tel" class="form-control" placeholder="0000-0000000" pattern="[0-9]{4}-[0-9]{7}" aria-label="Username" name="whatsappNo"></input>
         </div>
          {/* Mobile*/}
          <label className="mt-5">Mobile</label>
         <br></br>
         <div class="input-group mt-2 w-50 ">
-        <input type="tel" class="form-control" placeholder="0000-0000000" pattern="[0-9]{4}-[0-9]{7}" aria-label="Username" name="mNum"></input>
+        <input type="tel" class="form-control" placeholder="0000-0000000" pattern="[0-9]{4}-[0-9]{7}" aria-label="Username" name="phoneNo"></input>
         </div>
         {/* Email*/}
         <label className="mt-5">Email</label>
