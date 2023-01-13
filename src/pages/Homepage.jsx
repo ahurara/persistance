@@ -43,7 +43,7 @@ return(
         <div className="row g-0">
         <div className="col-12 m-5">
         <div className="row">
-        <h1 className="fw-bolder" style={{color:'#8B2009'}}>Courses</h1>
+        <h1 className="fw-bolder" style={{color:'#8B2009'}}>Amjad</h1>
         <br/>
         <br/><br/>
         <br/>
