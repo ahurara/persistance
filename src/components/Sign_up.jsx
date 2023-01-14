@@ -43,17 +43,37 @@ const Sign_up =()=>
     
     const data=await res.json()
 
-    if(res.status===422||!data){
-      window.alert("Invalid registration")
-      console.log("Invalid Registration");
-      console.log(JSON.stringify(data));
+    if(data.message){
+      if(data.message==="email"){
+        window.alert("Email Exists")
+        // return 
+      }
+      if(data.message==="phone"){
+        window.alert("Mobile number Exists")
+        // return
+      }
+      if(data.message==="whatsapp"){
+        window.alert("Whatsapp number Exists")
+        // return
+      }
     }
-    else{
-      window.alert("Successful registration")
-      console.log("Successful Registration");
 
-      history("/")
+    else{
+      if(res.status===422||!data){
+        window.alert("Invalid registration ")
+        console.log("Invalid Registration");
+        console.log(JSON.stringify(data));
+      }
+      else{
+        window.alert("Successful registration ")
+        console.log("Successful Registration");
+  
+        history("/")
+      }
+
     }
+    
+    
   }
 
     return(
