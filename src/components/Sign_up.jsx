@@ -38,9 +38,9 @@ const Sign_up =()=>
       body:JSON.stringify({
         fname,lname, gender,whatsappNo,phoneNo,email,password,confirm_password
       })
-    });
+    })
 
-    
+
     const data=await res.json()
 
     if(data.message){
