@@ -44,16 +44,41 @@ const Sign_up =()=>
     const data=await res.json()
 
     if(data.message){
+      if(data.message==="fname"){
+        window.alert("Enter your first name")
+      }
+      if(data.message==="lname"){
+        window.alert("Enter your last name")
+      }
+      if(data.message==="emptyemail"){
+        window.alert("Enter your email")
+      }
       if(data.message==="email"){
         window.alert("Email Exists")
         // return 
+      }
+      if(data.message==="emptyphone"){
+        window.alert("Enter your mobile no")
       }
       if(data.message==="phone"){
         window.alert("Mobile number Exists")
         // return
       }
+      if(data.message==="emptywhatsapp"){
+        window.alert("Enter your whatsapp no")
+      }
       if(data.message==="whatsapp"){
         window.alert("Whatsapp number Exists")
+        // return
+      }
+      if(data.message==="epassword"){
+        window.alert("Enter password")
+      }
+      if(data.message==="ecpassword"){
+        window.alert("Confirm your password")
+      }
+      if(data.message==="password"){
+        window.alert("Password Not Matched")
         // return
       }
     }
