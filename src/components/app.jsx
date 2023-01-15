@@ -4,6 +4,7 @@ import Courses from "../pages/Course";
 import Homepage from "../pages/Homepage";
 import Login from "../pages/login";
 import Signup_page from "../pages/signup";
+import Profile from "../pages/Profile";
 import AboutUs from "./AboutUsAtHomepage";
 
 const App=()=>
@@ -16,6 +17,7 @@ const App=()=>
         <Route exact path="/sign_up" element={<Signup_page/>} />
         <Route exact path="/courses" element={<Courses/>} />
         <Route exact path="/aboutus" element={<AboutUs/>}/>
+        <Route exact path="/profile" element={<Profile/>} />
     </Routes>
 
     </>

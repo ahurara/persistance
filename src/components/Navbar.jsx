@@ -29,7 +29,7 @@ const Navbar =()=>
                     <a className="nav-link text-white" href="/#">Teachers</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link text-white" href="/#">Contact us</a>
+                    <a className="nav-link text-white" href="Profile">Contact us</a>
                 </li>
             </ul>
             <ul className="navbar-nav flex-row mb-2">

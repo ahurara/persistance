@@ -36,7 +36,7 @@ const Sign_in =()=>
             }
             else{
                 window.alert('login Successfully')
-                history("/")
+                history("/Profile")
             }
         }
     }
