@@ -21,14 +21,23 @@ const Sign_in =()=>
               })
         })
 
-        const data=res.json();
-        if(res.status===400||!data){
-            window.alert('Invalid Credential')
+        
 
+        const data=res.json();
+
+        if(!email||!password)
+        {
+                window.alert('Fill empty sapce')
         }
         else{
-            window.alert('login Successfully')
-            history("/")
+            if(res.status===400||!data){
+                window.alert('Insert valid detail')
+    
+            }
+            else{
+                window.alert('login Successfully')
+                history("/")
+            }
         }
     }
 
