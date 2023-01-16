@@ -6,6 +6,9 @@ import Login from "../pages/login";
 import Signup_page from "../pages/signup";
 import Profile from "../pages/Profile";
 import AboutUs from "./AboutUsAtHomepage";
+import Tlogin from "../pages/tsign_in";
+// import TProfile from "../pages/tprofile";
+import Tprofile from "../pages/Tprofile";
 
 const App=()=>
 {
@@ -18,6 +21,8 @@ const App=()=>
         <Route exact path="/courses" element={<Courses/>} />
         <Route exact path="/aboutus" element={<AboutUs/>}/>
         <Route exact path="/profile" element={<Profile/>} />
+        <Route exact path="/teacher" element={<Tlogin/>} />
+        <Route exact path="/Tprofile" element={<Tprofile/>} />
     </Routes>
 
     </>

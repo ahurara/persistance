@@ -26,7 +26,9 @@ const Navbar =()=>
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link text-white" href="/#">Teachers</a>
+                <NavLink to='/teacher' className='nav-link text-white'>
+                Teacher
+                 </NavLink>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link text-white" href="Profile">Contact us</a>
