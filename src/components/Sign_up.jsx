@@ -10,6 +10,7 @@ const Sign_up =()=>
         whatsappNo:'',
         phoneNo:'',
         email:'',
+        secret:'',
         password: '',
         confirm_password: ''
       });
@@ -28,7 +29,7 @@ const Sign_up =()=>
   const PostData=async(e)=>{
     e.preventDefault()
 
-    const{fname,lname, gender,whatsappNo,phoneNo,email,password,confirm_password}=user;
+    const{fname,lname, gender,whatsappNo,phoneNo,email,secret,password,confirm_password}=user;
 
     const res=await fetch("/studentRegister",{
       method:"POST",
@@ -36,7 +37,7 @@ const Sign_up =()=>
         "Content-Type":"application/json"
       },
       body:JSON.stringify({
-        fname,lname, gender,whatsappNo,phoneNo,email,password,confirm_password
+        fname,lname, gender,whatsappNo,phoneNo,email,secret,password,confirm_password
       })
     })
 
@@ -69,6 +70,10 @@ const Sign_up =()=>
       }
       if(data.message==="whatsapp"){
         window.alert("Whatsapp number Exists")
+        // return
+      }
+      if(data.message==="secret"){
+        window.alert("Enter secret code")
         // return
       }
       if(data.message==="epassword"){
@@ -162,6 +167,15 @@ const Sign_up =()=>
         <div class="input-group mt-2 w-50 ">
         <input type="email" class="form-control" placeholder="someone@gmail.com"  aria-label="Username" name="email"
         value={user.email}
+        onChange={handleInputs}
+        ></input>
+        </div>
+        {/* Secret Code*/}
+        <label className="mt-5">Secret Code</label>
+        <br></br>
+        <div class="input-group mt-2 w-50 ">
+        <input type="text" class="form-control" placeholder="secret code"  aria-label="Username" name="secret"
+        value={user.secret}
         onChange={handleInputs}
         ></input>
         </div>
